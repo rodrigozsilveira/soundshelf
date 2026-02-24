@@ -2,11 +2,15 @@
 
 This project is a basic web application to publish music.
 
-The frontend is built with React and communicates with an API built with Express (Node.js). The backend handles requests for uploading, listing, and deleting songs.
+The frontend is built with React and communicates with a API developed using Express.js. The backend is responsible for user authentication, handling file uploads, generating signed URLs for streaming, and managing music metadata.
 
-Audio files such as .mp3 and .wav are stored in an object storage service using MinIO. MinIO provides S3-compatible storage, and Nginx is used as a reverse proxy to expose the API and serve the stored files.
+Audio files such as .mp3 and .wav are stored in a MinIO Storage. Instead of serving files directly, the backend generates temporary signed URLs that allow secure access to stored objects.
+
+A NGINX reverse proxy sits in front of the application, routing requests to the frontend and backend services within a containerized environment.
 
 The database is built with MongoDB.
+
+The application is fully containerized using Docker, with each service (frontend, backend, database, object storage, and reverse proxy) running in its own isolated container and communicating over an internal network.
 
 ## Architecture Diagram
 
