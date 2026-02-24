@@ -11,6 +11,9 @@ A NGINX reverse proxy sits in front of the application, routing requests to the 
 The database is built with MongoDB.
 
 The application is fully containerized using Docker, with each service (frontend, backend, database, object storage, and reverse proxy) running in its own isolated container and communicating over an internal network.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7bd5a580-89ec-4aef-8ceb-74955baf859f" width="900">
+</p>
 
 ## Architecture Diagram
 
