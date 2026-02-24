@@ -31,3 +31,7 @@ The My Music page displays only the authenticated user’s uploads and allows de
 <p align="center">
   <img src="https://github.com/user-attachments/assets/a1950a2e-b39e-4b84-9480-71784daaa2f1" width="900">
 </p>
+
+---
+
+This App was built as a final project for the Distributed Systems class.
